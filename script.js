@@ -1,3 +1,5 @@
+ 
+ $(document).ready(function(){
  let object1 = JSON.parse(localStorage.getItem("data"));
  //console.log(object1);
  let currentTime = new Date();
@@ -11,6 +13,7 @@
 else if(i < currentHour){
     $("textarea").removeClass("future present")
 }
+
 
 
  $(".container").append(`
@@ -34,4 +37,4 @@ else if(i < currentHour){
    // console.log(localStorage.getItem("data"));
 });
 
-
+ });
